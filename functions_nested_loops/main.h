@@ -3,6 +3,6 @@
 
 int _putchar(char c);
 
-/* Add other function prototypes here if you create more functions */
+void print_alphabet(void);
 
 #endif /* MAIN_H */
