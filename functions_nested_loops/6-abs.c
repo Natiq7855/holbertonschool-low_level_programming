@@ -10,10 +10,10 @@ int _abs(int n)
 {
     if (c >= 0)
     {
-        return(n)
+        return (n);
     }
     else
     {
-        return(-n)
+        return (-n);
     }
 }
