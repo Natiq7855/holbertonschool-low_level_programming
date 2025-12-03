@@ -3,6 +3,6 @@
 
 int _putchar(char c);
 int _isupper(int c);
-/* add other prototypes here */
+int _isdigit(int c);
 
 #endif /* MAIN_H */
