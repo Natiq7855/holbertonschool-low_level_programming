@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * swap_int - Swaps the values of two integers.
+ * _strlen - Swaps the values of two integers.
  * @s: Pointer to the first integer.
  * Pointer to the second integer.
  *
