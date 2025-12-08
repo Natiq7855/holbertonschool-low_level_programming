@@ -1,8 +1,14 @@
 #include "main.h"
-/**
-*djf
-*/
 
+/**
+ * swap_int - Swaps the values of two integers.
+ * @a: Pointer to the first integer.
+ * @b: Pointer to the second integer.
+ *
+ * Description: This function takes two integer pointers and swaps
+ * the values stored at the addresses they point to.
+ */
+ 
 void swap_int(int *a, int *b)
 {
 int temp;
