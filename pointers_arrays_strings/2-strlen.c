@@ -9,7 +9,7 @@
  *
  * Return: The length of the string.
  */
- 
+
 int _strlen(char *s)
 {
 int a = 0;
