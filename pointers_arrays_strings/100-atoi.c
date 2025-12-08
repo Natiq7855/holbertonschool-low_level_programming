@@ -32,11 +32,11 @@ if (num > (2147483647 - (s[i] - '0')) / 10)
 {
 if (sign == 1)
 {
-return 2147483647; /* Clamp to INT_MAX */
+return (2147483647); /* Clamp to INT_MAX */
 }
 else
 {
-return -2147483648; /* Clamp to INT_MIN */
+return (-2147483648); /* Clamp to INT_MIN */
 }
 }
 
@@ -49,5 +49,5 @@ break;
 i++;
 }
 
-return (sign * num);
+return (sign *num);
 }
