@@ -1,14 +1,15 @@
 #include "main.h"
 
 /**
- * _strlen - Swaps the values of two integers.
- * @s: Pointer to the first integer.
- * Pointer to the second integer.
+ * _strlen - Returns the length of a string.
+ * @s: Pointer to the string.
  *
- * Description: This function takes two integer pointers and swaps
- * the values stored at the addresses they point to.
+ * Description: This function calculates the number of characters
+ * in the string pointed to by s, not including the null terminator.
+ *
+ * Return: The length of the string.
  */
-
+ 
 int _strlen(char *s)
 {
 int a = 0;
