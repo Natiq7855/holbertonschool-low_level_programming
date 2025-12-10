@@ -10,6 +10,7 @@
 char *cap_string(char *s)
 {
 int i = 0;
+int capitalize = 1;
 while (s[i] != '\0')
 {
 if (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == ',' || s[i] == ';' || s[i] == '.' ||s[i] == '!' || s[i] == '?' || s[i] == '"' ||s[i] == '(' || s[i] == ')' || s[i] == '{' || s[i] == '}')
