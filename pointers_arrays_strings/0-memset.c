@@ -18,5 +18,5 @@ s[i] = b;
 }
 
 
-return s;
+return (s);
 }
