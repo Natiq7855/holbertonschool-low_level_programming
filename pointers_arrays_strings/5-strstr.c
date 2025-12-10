@@ -14,7 +14,7 @@ char *_strstr(char *haystack, char *needle)
 unsigned int i, j;
 
 if (!*needle)  /* If needle is empty, return haystack */
-return haystack;
+return (haystack);
 
 for (i = 0; haystack[i] != '\0'; i++)
 {
