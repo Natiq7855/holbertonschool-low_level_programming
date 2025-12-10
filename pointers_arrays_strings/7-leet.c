@@ -11,15 +11,15 @@
 char *leet(char *s)
 {
 int i,j;
-char letters[]="aAeEoOtTlL";
-char codes[]="4433007711";
-for(i=0;s[i]!='\0';i++)
+char letters[] = "aAeEoOtTlL";
+char codes[] = "4433007711";
+for(i = 0; s[i] != '\0'; i++)
 {
-for(j=0;letters[j]!='\0';j++)
+for(j = 0; letters[j] != '\0'; j++)
 {
-if(s[i]==letters[j])
+if(s[i] == letters[j])
 {
-    s[i]=codes[j];
+    s[i] = codes[j];
 break;
 }
 }
