@@ -32,4 +32,5 @@ capitalize = 0;
 }
 i++;
 }
+return (s);
 }
