@@ -27,7 +27,7 @@ s[i] += 32;
 }
 else 
 {
-capitalzie = 0;
+capitalize = 0;
 }
 i++;
 }
