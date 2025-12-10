@@ -10,7 +10,7 @@
 char *cap_string(char *s)
 {
 int i = 0;
-int capitalize_next = 1;  /* Capitalize first letter of the string and after separators */
+int capitalize_next = 1;
 
 while (s[i] != '\0')
 {
@@ -35,5 +35,5 @@ capitalize_next = 0;
 i++;
 }
 
-return s;
+return (s);
 }
