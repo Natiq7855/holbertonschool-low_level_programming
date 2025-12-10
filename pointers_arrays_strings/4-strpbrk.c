@@ -13,9 +13,9 @@ a++;
 }
 while (s[i] != '\0')
 {
-for (t < a; t++)
+for (t = 0; t < a; t++)
 {
-if (s[i] == accept[t]);
+if (s[i] == accept[t])
 {
 return (&s[i]);
 }
