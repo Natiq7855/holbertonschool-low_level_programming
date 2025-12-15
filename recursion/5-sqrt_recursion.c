@@ -9,10 +9,10 @@
 int _sqrt_helper(int n, int i)
 {
 	if (i * i > n) /* guess too high, no natural sqrt */
-		return -1;
+		return (-1);
 	if (i * i == n) /* found the square root */
-		return i;
-	return _sqrt_helper(n, i + 1); /* try next number */
+		return (i);
+	return (_sqrt_helper(n, i + 1)); /* try next number */
 }
 
 /**
@@ -23,6 +23,6 @@ int _sqrt_helper(int n, int i)
 int _sqrt_recursion(int n)
 {
 	if (n < 0) /* negative numbers have no natural sqrt */
-		return -1;
-	return _sqrt_helper(n, 1); /* start guessing from 1 */
+		return (-1);
+	return (_sqrt_helper(n, 1)); /* start guessing from 1 */
 }
