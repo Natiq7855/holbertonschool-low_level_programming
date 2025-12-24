@@ -6,20 +6,22 @@
  * @grid: Pointer to the 2D array
  * @height: Number of rows in the grid
  */
+
+
 void free_grid(int **grid, int height)
 {
-    int i;
+int i;
 
-    if (grid == NULL)
-        return;
-
-    /* Free each row */
-    for (i = 0; i < height; i++)
-    {
-        if (grid[i] != NULL)
-            free(grid[i]);
-    }
-
-    /* Free the array of row pointers */
-    free(grid);
+if (grid == NULL)
+{
+return;
+}
+for (i = 0; i < height; i++)
+{
+if (grid[i] != NULL)
+{
+free(grid[i]);
+}
+}
+free(grid);
 }
