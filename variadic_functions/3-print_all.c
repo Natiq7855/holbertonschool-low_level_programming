@@ -10,9 +10,9 @@ char *sep = "";
 va_start(args, format);
 if (format)
 {
-while(format)
+while(format[i])
 {
-switch(format)
+switch(format[i])
 {
 case 'c':
 printf("%s%c", *sep, va_arg(args, int))
