@@ -1,6 +1,11 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
+/**
+ * print_all - Prints any type of argument based on a format string.
+ * @format: A list of types of arguments passed to the function.
+ * @...: The actual arguments to be printed.
+ */
 
 void print_all(const char * const format, ...)
 {
@@ -11,9 +16,9 @@ char *sep = "";
 va_start(args, format);
 if (format)
 {
-while(format[i])
+while (format[i])
 {
-switch(format[i])
+switch (format[i])
 {
 case 'c':
 printf("%s%c", sep, va_arg(args, int));
