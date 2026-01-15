@@ -14,7 +14,7 @@ dlistint_t *temp;
 while (head != NULL)
 {
 temp = head->next;
-free (head);
+free(head);
 head = temp;
 }
 }
