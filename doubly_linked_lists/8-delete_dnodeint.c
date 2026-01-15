@@ -29,7 +29,7 @@ temp->next->prev = NULL;
 free(temp);
 return (1);
 }
-for (i = 0; temp != NULL && i < index - 1; i++)
+for (i = 0; temp != NULL && i < index; i++)
 {
 temp = temp->next;
 }
