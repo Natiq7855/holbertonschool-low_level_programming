@@ -5,6 +5,7 @@
 /**
  * print_list - prints all the elements of a list_t list
  * @h: pointer to the first node
+ * Return: number of nodes
  */
 
 
@@ -16,6 +17,5 @@ while (h != NULL)
 count++;
 h = h->next;
 }
-return(count);
-    
+return (count);
 }
