@@ -18,7 +18,7 @@ if (h->str == NULL)
 {
 printf("[0] (nil)\n");
 }
-else 
+else
 {
 printf("[%u] %s\n", h->len, h->str);
 }
