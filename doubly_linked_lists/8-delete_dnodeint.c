@@ -3,6 +3,15 @@
 #include <stddef.h>
 #include <stdlib.h>
 
+/**
+ * delete_dnodeint_at_index - deletes the node at index idx
+ * @head: pointer to the pointer of the first node
+ * @index: index of the node to delete (0-based)
+ *
+ * Return: 1 if success, -1 if fail
+ */
+
+
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 dlistint_t *temp;
