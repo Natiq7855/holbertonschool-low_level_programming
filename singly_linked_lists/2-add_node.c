@@ -1,11 +1,12 @@
 #include "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 list_t *add_node(list_t **head, const char *str)
 {
 list_t *new;
-unsigned int i = 0;
+unsigned int len;
 
 if (head == NULL || str == NULL)
 {
@@ -22,7 +23,7 @@ while (new->str != NULL)
 free(new);
 return (NULL);
 }
-
+len = 0;
 while (str[len])
 len++;
 
