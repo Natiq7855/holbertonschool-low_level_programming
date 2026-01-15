@@ -1,6 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 #include <stddef.h>
+#include <stdlib.h>
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
