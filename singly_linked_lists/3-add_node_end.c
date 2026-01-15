@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <sdtio.h>
 #include <stdlib.h>
 #include <string.h>
 
