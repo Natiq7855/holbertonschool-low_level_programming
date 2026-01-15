@@ -16,6 +16,6 @@ size_t count = 0;
 count++;
 h = h->next;
 }
-printf("-> %u elements", h->str);
+return(count);
     
 }
