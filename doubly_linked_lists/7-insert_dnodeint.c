@@ -37,9 +37,9 @@ if (new == NULL)
 return (NULL);
 }
 new->n = n;
-new->prev = temp;
 new->next = temp->next;
-temp->prev->next = new;
+new->prev = temp;
+temp->next->prev = new;
 temp->next = new;
 return (new);
 }
