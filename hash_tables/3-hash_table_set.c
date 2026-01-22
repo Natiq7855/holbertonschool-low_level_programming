@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 #include "hash_tables.h"
 /**
  * hash_table_set - Adds or updates an element in the hash table.
