@@ -21,7 +21,7 @@ while (text_content[i] != '\0')
 i++;
 }
 n_wrote = write(fd, text_content, i);
-if (n_wrote == -1 || n_wrote != len)
+if (n_wrote == -1 || n_wrote != i)
 {
 close(fd);
 return (-1);
