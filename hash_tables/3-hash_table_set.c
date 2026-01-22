@@ -18,18 +18,18 @@ unsigned long int index;
 char *new_value;
 if (ht == NULL || key == NULL || value == NULL || *value == '\0')
 {
-return(0);
+return (0);
 }
 index = key_index((const unsigned char *)key, ht->size);
 temp = ht->array[index];
-while(temp)
+while (temp)
 {
 if (strcmp(temp->key, key) == 0)
 {
 new_value = strdup(value);
 if (new_value == NULL)
 return (0);
-free (temp->value);
+free(temp->value);
 temp->value = new_value;
 return (1);
 }
@@ -37,7 +37,7 @@ temp = temp->next;
 }
 new_node = malloc(sizeof(hash_node_t));
 if (new_node == NULL)
-return(0);
+return (0);
 new_node->key = strdup(key);
 if (new_node->key == NULL)
 {
