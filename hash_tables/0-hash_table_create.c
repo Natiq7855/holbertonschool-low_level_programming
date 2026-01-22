@@ -26,10 +26,10 @@ return (NULL);
 ht->size = size;
 
 ht->array = malloc(sizeof(hash_node_t *) * size);
-if(ht->array == NULL)
+if (ht->array == NULL)
 {
-free(ht);       
-return(NULL);
+free (ht);       
+return (NULL);
 }
 
 for (i = 0; i < size; i++)
