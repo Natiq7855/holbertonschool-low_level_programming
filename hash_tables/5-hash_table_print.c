@@ -30,10 +30,10 @@ if (flag == 1)
 {
 printf(", ");
 }
-printf("%s, %s", node->key, node->value);
+printf("'%s' : '%s'", node->key, node->value);
 flag = 1;
 node = node->next;
 }
 }
-printf("}");
+printf("}\n");
 }
