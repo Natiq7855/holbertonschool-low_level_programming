@@ -25,7 +25,7 @@ index = key_index((const unsigned char *)key, ht->size);
 
 node = ht->array[index];
 
-while(node != NULL)
+while (node != NULL)
 {
 if (strcmp(node->key, key) == 0)
 {
@@ -33,5 +33,5 @@ return (node->value);
 }
 node = node->next;
 }
-return(NULL);
+return (NULL);
 }
