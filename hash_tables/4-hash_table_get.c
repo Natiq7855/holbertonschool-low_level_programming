@@ -18,7 +18,7 @@ node = ht->array[index];
 
 while(node != NULL)
 {
-if (strdup(node->key, key) != 0)
+if (strcmp(node->key, key) != 0)
 {
 return (node->value);
 }
