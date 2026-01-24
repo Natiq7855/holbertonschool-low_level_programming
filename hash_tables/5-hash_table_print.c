@@ -21,7 +21,7 @@ while (node != NULL)
 {
 if (flag == 1)
 {
-printf(", ")
+printf(", ");
 }
 printf("%s, %s", node->key, node->value);
 flag = 1;
