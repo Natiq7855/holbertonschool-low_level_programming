@@ -1,10 +1,9 @@
+#include <stdlib.h> /* This provides 'free' and 'NULL' */
 #include "hash_tables.h"
 
 /**
- * hash_table_delete - Deletes a hash table.
+ * hash_table_delete - Deletes a hash table and frees all memory.
  * @ht: A pointer to the hash table.
- *
- * Return: void.
  */
 void hash_table_delete(hash_table_t *ht)
 {
@@ -14,32 +13,28 @@ void hash_table_delete(hash_table_t *ht)
 	if (ht == NULL)
 		return;
 
-	/* 1. Loop through each bucket in the array */
 	for (i = 0; i < ht->size; i++)
 	{
 		node = ht->array[i];
 
-		/* 2. Traverse the linked list at this bucket */
 		while (node != NULL)
 		{
-			/* Store the next pointer before freeing current node */
+			/* Save the next node BEFORE we free the current one */
 			next_node = node->next;
 
-			/* 3. Free the duplicated strings */
+			/* Free the members of the node (created with strdup) */
 			free(node->key);
 			free(node->value);
 
-			/* 4. Free the node structure itself */
+			/* Free the node structure itself */
 			free(node);
 
-			/* Move to the next saved node */
+			/* Move to the next node in the chain */
 			node = next_node;
 		}
 	}
 
-	/* 5. Free the array of pointers */
+	/* Free the array of pointers and the table struct itself */
 	free(ht->array);
-
-	/* 6. Free the main table structure */
 	free(ht);
 }
